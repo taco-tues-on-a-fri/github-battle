@@ -1,20 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css' // This works because of the style-loader
+import './index.css' 
 import Popular from './components/popular'
+import Battle from './components/battle'
+
 
 class App extends React.Component {
   render() {
     return (
       <div className='container'>
-        <Popular />
+        <Battle />
       </div>
     )
   }
 }
 
 ReactDOM.render(
-  <App />,                        // React Element,
-  document.getElementById('app')  // Where to render the Element to
+  <App />,                        
+  document.getElementById('app')  
 )
 
