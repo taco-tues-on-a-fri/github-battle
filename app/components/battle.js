@@ -110,14 +110,14 @@ export default class Battle extends React.Component {
             {playerOne === null && (
               <PlayerInput
                 label='Player One'
-                onSubmit={(player) => }
+                onSubmit={(player) => this.handleSubmit('playerOne', player)}
               />
             )}
 
             {playerTwo === null && (
               <PlayerInput
-                label='Player '
-                onSubmit={(player) => }
+                label='Player Two'
+                onSubmit={(player) => this.handleSubmit('playerTwo', player)}
               />
             )}
           </div>
