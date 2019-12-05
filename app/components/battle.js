@@ -2,6 +2,8 @@ import React from 'react'
 import { FaUserFriends, FaFighterJet, FaTrophy, FaTimesCircle, FaUber } from 'react-icons/fa'
 import PropTypes from 'prop-types'
 import Results from './results'
+
+
 function Instructions () {
   return (
     <div className='instructions-container'>
