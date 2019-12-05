@@ -9,6 +9,7 @@ function getErrorMsg (message, username) {
   if (message === 'Not Found') {
     return `${username} doesn't exist`
   }
+
   return message
 }
 
@@ -26,25 +27,23 @@ function getProfile (username) {
 
 function getRepos (username) {
   return fetch (`https://api.github.com/users/${username}/repos${params}&per_page=100`)
-  .then((res) => res.json())
-  .then((repos) => {
-    if (repos.message) {
-      throw new Error(getErrorMsg(repos.message, username))
-    }
+    .then((res) => res.json())
+    .then((repos) => {
+      if (repos.message) {
+        throw new Error(getErrorMsg(repos.message, username))
+      }
 
-    return repos
-  })
+      return repos
+    })
 }
 
 
 function getStarCount (repos) {
   return repos.reduce((count, { stargazers_count }) => count + stargazers_count, 0)
-  stargazers_count
 }
 
 function calculateScore (followers, repos) {
   return (followers * 3) + getStarCount(repos)
-
 }
 
 
