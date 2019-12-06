@@ -178,7 +178,7 @@ export default class Battle extends React.Component {
 
           {playerOne && playerTwo && (
             <button
-              className='btn-dark btn-space'
+              className='btn dark-btn btn-space'
               onClick={() => this.setState({battle: true})}
             >
               Battle  
