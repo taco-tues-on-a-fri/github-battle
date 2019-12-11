@@ -12,8 +12,11 @@ Created by following [Tyler McGinnis' React Tutorial](https://tylermcginnis.com/
 ### State of project:
 The project is still under development in the tutorial.
 
-![Homepage](src/random-username-generator-01.png)
-![List of words](src/random-username-generator-02.png)
-![Alert](src/random-username-generator-03.png)
+![Battle01](src/example/battle-example-01.png)
+![Battle02](src/example/battle-example-02.png)
+![Battle03](src/example/battle-example-03.png)
+![Popular01](src/example/popular-example-01.png)
+![Popular02](src/example/popular-example-02.png)
+![Popular03](src/example/popular-example-03.png)
 
 #### 🌮taco-tues-on-a-fri
