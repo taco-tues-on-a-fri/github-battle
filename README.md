@@ -19,4 +19,4 @@ The project is still under development in the tutorial.
 ![Popular02](src/example/popular-example-02.png)
 ![Popular03](src/example/popular-example-03.png)
 
-#### 🌮taco-tues-on-a-fri
+#### 🌮taco-tues-on-a-fri 
