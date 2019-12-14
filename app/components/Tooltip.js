@@ -25,34 +25,6 @@ const styles = {
   }
 }
 
-export default class Tooltip extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      hovering: false,
-    }
-
-    this.mouseOver = this.mouseOver.bind(this)
-    this.mouseOut = this.mouseOut.bind(this)
-  }
-  mouseOver() {
-    this.setState({
-      hovering: true
-    })
-  }
-  mouseOut() {
-    this.setState({
-      hovering: false
-    })
-  }
-  render() {
-    const { text, children } = this.props
-    const { hovering } = this.state
-    
-  }
-}
-
 function Tooltip ({ text, children, hovering }) {
   return(
     <div style={styles.container} >
@@ -68,3 +40,4 @@ Tooltip.PropTypes = {
 }
 
 export default withHover(Tooltip)
+// export default withHover(Tooltip, 'hovering')//add 2nd argument if there is a naming collision
