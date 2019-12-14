@@ -50,7 +50,8 @@ class ProfileList extends React.Component {
     })
   }
   render() {
-    const { profile } =this.props
+    const { profile } = this.props
+    const { hoveringCompany, hoveringLocation } = this.state
 
     return (
       <ul className='card-list'>
