@@ -1,8 +1,8 @@
-import { ID, SEC } from '../../env'
+// import { ID, SEC } from '../../env'
 
-const id = ID
-const sec = SEC
-const params = `?client_id=${id}&client_secret=${sec}`
+// const id = ID
+// const sec = SEC
+// const params = `?client_id=${id}&client_secret=${sec}`
 
 
 function getErrorMsg (message, username) {
@@ -14,7 +14,8 @@ function getErrorMsg (message, username) {
 }
 
 function getProfile (username) {
-  return fetch(`https://api.github.com/users/${username}${params}`) 
+  // return fetch(`https://api.github.com/users/${username}${params}`) 
+  return fetch(`https://api.github.com/users/${username}`) 
     .then((res) => res.json())
     .then((profile) => {
       if(profile.message) {
@@ -26,7 +27,8 @@ function getProfile (username) {
 }
 
 function getRepos (username) {
-  return fetch (`https://api.github.com/users/${username}/repos${params}&per_page=100`)
+  // return fetch (`https://api.github.com/users/${username}/repos${params}&per_page=100`)
+  return fetch (`https://api.github.com/users/${username}/repos`)
     .then((res) => res.json())
     .then((repos) => {
       if (repos.message) {
