@@ -1,7 +1,7 @@
 {
   "name": "github-battle",
   "version": "1.0.0",
-  "description": "",
+  "description": "Github Battle Tutorial",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
