@@ -37,6 +37,6 @@ export default function Tooltip ({ text, children }) {
   )
 }
 
-Tooltip.PropTypes = {
+Tooltip.propTypes = {
   text: PropTypes.string.isRequired,
 }
