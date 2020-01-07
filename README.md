@@ -10,7 +10,7 @@ November 2019 - December 2019
 Created by following [Tyler McGinnis' React Tutorial](https://tylermcginnis.com/courses/react/). The application requests repository and user profile data from Github's API then renders dynamic content with the response.  The battle component compares statistics for two specified users then calculates a winner based on stars and followers.
 
 ### State of project:
-The project is complete as per the tutorial.
+This project is complete.
 
 ![Battle01](src/example/battle-complete-light.png)
 ---
